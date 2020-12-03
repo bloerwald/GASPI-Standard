@@ -78,7 +78,7 @@ main (int argc, char *argv[])
     ASSERT (gaspi_notify_waitsome ( segment_id_dst, 0, nProc,
 				  , &first_notify_id, GASPI_BLOCK));
 
-    gaspi_notification_id_t notify_val = 0;
+    gaspi_notification_t notify_val = 0;
 
     ASSERT (gaspi_notify_reset (segment_id_dst, first_notify_id
                                , &notify_val));
